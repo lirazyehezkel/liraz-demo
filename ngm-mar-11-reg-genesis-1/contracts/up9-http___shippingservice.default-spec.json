@@ -1,0 +1,202 @@
+{
+ "info": {
+  "title": "http://shippingservice.default",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/hipstershop.ShippingService/GetQuote": {
+   "parameters": [],
+   "post": {
+    "operationId": "b218abce-c37d-474d-9f03-e2d37740eefe",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/grpc": {
+       "schema": {
+        "pb_field": 0,
+        "pb_repeated": false,
+        "pb_type": 11,
+        "properties": {
+         "1": {
+          "pb_field": 1,
+          "pb_repeated": false,
+          "pb_type": 11,
+          "properties": {
+           "1": {
+            "pb_field": 1,
+            "pb_repeated": false,
+            "pb_type": 9,
+            "type": "string"
+           },
+           "2": {
+            "pb_field": 2,
+            "pb_repeated": false,
+            "pb_type": 9,
+            "type": "string"
+           },
+           "3": {
+            "pb_field": 3,
+            "pb_repeated": false,
+            "pb_type": 9,
+            "type": "string"
+           },
+           "4": {
+            "pb_field": 4,
+            "pb_repeated": false,
+            "pb_type": 9,
+            "type": "string"
+           },
+           "5": {
+            "pb_field": 5,
+            "pb_repeated": false,
+            "pb_type": 5,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "2": {
+          "pb_field": 2,
+          "pb_repeated": false,
+          "pb_type": 11,
+          "properties": {
+           "1": {
+            "pb_field": 1,
+            "pb_repeated": false,
+            "pb_type": 9,
+            "type": "string"
+           },
+           "2": {
+            "pb_field": 2,
+            "pb_repeated": false,
+            "pb_type": 5,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         }
+        },
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/grpc": {
+        "example": "\u0000\u0000\u0000\u0000\u0007\n\u0005\n\u0003USD"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1569 requests",
+    "tags": [
+     "hipstershop.ShippingService"
+    ]
+   }
+  },
+  "/hipstershop.ShippingService/ShipOrder": {
+   "parameters": [],
+   "post": {
+    "operationId": "a0840db5-24a0-4f68-a08c-98c8694351ff",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/grpc": {
+       "schema": {
+        "pb_field": 0,
+        "pb_repeated": false,
+        "pb_type": 11,
+        "properties": {
+         "1": {
+          "pb_field": 1,
+          "pb_repeated": false,
+          "pb_type": 11,
+          "properties": {
+           "1": {
+            "pb_field": 1,
+            "pb_repeated": false,
+            "pb_type": 9,
+            "type": "string"
+           },
+           "2": {
+            "pb_field": 2,
+            "pb_repeated": false,
+            "pb_type": 9,
+            "type": "string"
+           },
+           "3": {
+            "pb_field": 3,
+            "pb_repeated": false,
+            "pb_type": 9,
+            "type": "string"
+           },
+           "4": {
+            "pb_field": 4,
+            "pb_repeated": false,
+            "pb_type": 9,
+            "type": "string"
+           },
+           "5": {
+            "pb_field": 5,
+            "pb_repeated": false,
+            "pb_type": 5,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "2": {
+          "pb_field": 2,
+          "pb_repeated": false,
+          "pb_type": 11,
+          "properties": {
+           "1": {
+            "pb_field": 1,
+            "pb_repeated": false,
+            "pb_type": 9,
+            "type": "string"
+           },
+           "2": {
+            "pb_field": 2,
+            "pb_repeated": false,
+            "pb_type": 5,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         }
+        },
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/grpc": {
+        "example": "\u0000\u0000\u0000\u0000\u0014\n\u0012AP-44532-229317546"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 224 requests",
+    "tags": [
+     "hipstershop.ShippingService"
+    ]
+   }
+  }
+ },
+ "tags": [
+  {
+   "name": "hipstershop.ShippingService"
+  }
+ ]
+}

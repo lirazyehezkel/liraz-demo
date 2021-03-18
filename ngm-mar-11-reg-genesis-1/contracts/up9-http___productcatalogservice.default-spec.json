@@ -1,0 +1,87 @@
+{
+ "info": {
+  "title": "http://productcatalogservice.default",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/hipstershop.ProductCatalogService/GetProduct": {
+   "parameters": [],
+   "post": {
+    "operationId": "8744bbf0-58a3-4e2e-9369-ed95533091a1",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/grpc": {
+       "schema": {
+        "pb_field": 0,
+        "pb_repeated": false,
+        "pb_type": 11,
+        "properties": {
+         "1": {
+          "pb_field": 1,
+          "pb_repeated": false,
+          "pb_type": 9,
+          "type": "string"
+         }
+        },
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/grpc": {}
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 4210136 requests",
+    "tags": [
+     "hipstershop.ProductCatalogService"
+    ]
+   }
+  },
+  "/hipstershop.ProductCatalogService/ListProducts": {
+   "parameters": [],
+   "post": {
+    "operationId": "eac9f4f4-902c-4265-879a-3f634d58f458",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/grpc": {
+       "schema": {
+        "pb_field": 0,
+        "pb_repeated": false,
+        "pb_type": 11,
+        "properties": {},
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/grpc": {}
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 749738 requests",
+    "tags": [
+     "hipstershop.ProductCatalogService"
+    ]
+   }
+  }
+ },
+ "tags": [
+  {
+   "name": "hipstershop.ProductCatalogService"
+  }
+ ]
+}

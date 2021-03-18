@@ -1,0 +1,13 @@
+{
+ "parameters": [
+  {
+   "name": "currency_code",
+   "uuid": "ec2f9bf1-38c8-47e8-8b33-844b710a49cd"
+  }
+ ],
+ "rows": [
+  {
+   "currency_code": "EUR"
+  }
+ ]
+}

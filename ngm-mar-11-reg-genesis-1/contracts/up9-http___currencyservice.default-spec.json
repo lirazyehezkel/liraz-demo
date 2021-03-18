@@ -1,0 +1,113 @@
+{
+ "info": {
+  "title": "http://currencyservice.default",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/hipstershop.CurrencyService/Convert": {
+   "parameters": [],
+   "post": {
+    "operationId": "725f9df8-e6e7-4c9c-856e-133452a086dc",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/grpc": {
+       "schema": {
+        "pb_field": 0,
+        "pb_repeated": false,
+        "pb_type": 11,
+        "properties": {
+         "1": {
+          "pb_field": 1,
+          "pb_repeated": false,
+          "pb_type": 11,
+          "properties": {
+           "1": {
+            "pb_field": 1,
+            "pb_repeated": false,
+            "pb_type": 9,
+            "type": "string"
+           },
+           "2": {
+            "pb_field": 2,
+            "pb_repeated": false,
+            "pb_type": 5,
+            "type": "integer"
+           },
+           "3": {
+            "pb_field": 3,
+            "pb_repeated": false,
+            "pb_type": 5,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         },
+         "2": {
+          "pb_field": 2,
+          "pb_repeated": false,
+          "pb_type": 9,
+          "type": "string"
+         }
+        },
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/grpc": {}
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 2616948 requests",
+    "tags": [
+     "hipstershop.CurrencyService"
+    ]
+   }
+  },
+  "/hipstershop.CurrencyService/GetSupportedCurrencies": {
+   "parameters": [],
+   "post": {
+    "operationId": "34f58e02-a182-4136-9cdd-793a45fbab12",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/grpc": {
+       "schema": {
+        "pb_field": 0,
+        "pb_repeated": false,
+        "pb_type": 11,
+        "properties": {},
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/grpc": {}
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 990623 requests",
+    "tags": [
+     "hipstershop.CurrencyService"
+    ]
+   }
+  }
+ },
+ "tags": [
+  {
+   "name": "hipstershop.CurrencyService"
+  }
+ ]
+}

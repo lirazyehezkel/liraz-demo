@@ -1,0 +1,48 @@
+{
+ "parameters": [
+  {
+   "name": "city",
+   "uuid": "2cc06d27-e519-4126-bb27-c9f004e13bb9"
+  },
+  {
+   "name": "country",
+   "uuid": "c1f4ee12-e510-422a-b6ae-ba6be1192df6"
+  },
+  {
+   "name": "credit_card_cvv",
+   "uuid": "6aaf53ba-0a94-4f20-b9c2-1ea259d27ad6"
+  },
+  {
+   "name": "credit_card_expiration_year",
+   "uuid": "af603fb7-e1ca-48f0-9de2-012b34d85357"
+  },
+  {
+   "name": "credit_card_number",
+   "uuid": "01f0f171-9751-45e4-b578-92fddf55cf41"
+  },
+  {
+   "name": "email",
+   "uuid": "b7f1b2d2-8c47-4eff-babb-117f4418cef6"
+  },
+  {
+   "name": "street_address",
+   "uuid": "ba3f136d-dcb8-4727-bfa1-b1f768be5956"
+  },
+  {
+   "name": "zip_code",
+   "uuid": "cd114099-9e0b-4f18-9ab0-627ae85dd186"
+  }
+ ],
+ "rows": [
+  {
+   "city": "Mountain View",
+   "country": "United States",
+   "credit_card_cvv": "672",
+   "credit_card_expiration_year": "2039",
+   "credit_card_number": "4432-8015-6152-0454",
+   "email": "someone@example.com",
+   "street_address": "1600 Amphitheatre Parkway",
+   "zip_code": "94043"
+  }
+ ]
+}

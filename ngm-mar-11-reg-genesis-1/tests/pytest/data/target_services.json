@@ -1,0 +1,14 @@
+{
+ "TARGET_ADSERVICE_DEFAULT": "http://adservice.default",
+ "TARGET_CARTSERVICE_DEFAULT": "http://cartservice.default",
+ "TARGET_CHECKOUTSERVICE_DEFAULT": "http://checkoutservice.default",
+ "TARGET_CURRENCYSERVICE_DEFAULT": "http://currencyservice.default",
+ "TARGET_EMAILSERVICE_DEFAULT": "http://emailservice.default",
+ "TARGET_FRONTEND_DEFAULT": "http://frontend.default",
+ "TARGET_FRONTEND_DEFAULTHTTP_": "http://frontend.defaulthttp:",
+ "TARGET_FRONTEND_EXTERNAL_DEFAULT": "http://frontend-external.default",
+ "TARGET_PAYMENTSERVICE_DEFAULT": "http://paymentservice.default",
+ "TARGET_PRODUCTCATALOGSERVICE_DEFAULT": "http://productcatalogservice.default",
+ "TARGET_RECOMMENDATIONSERVICE_DEFAULT": "http://recommendationservice.default",
+ "TARGET_SHIPPINGSERVICE_DEFAULT": "http://shippingservice.default"
+}

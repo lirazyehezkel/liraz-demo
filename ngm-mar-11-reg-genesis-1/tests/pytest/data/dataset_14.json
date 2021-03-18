@@ -1,0 +1,28 @@
+{
+ "parameters": [
+  {
+   "name": "field_1_1",
+   "uuid": "4051bca0-a8d3-48d0-9ad8-d3b1d27c83dc"
+  },
+  {
+   "name": "field_2_1",
+   "uuid": "5d933145-d5c9-4dd9-ad18-b19af8c53520"
+  },
+  {
+   "name": "field_2_2",
+   "uuid": "a54b3eb5-0b94-40b1-bcce-343942098a04"
+  },
+  {
+   "name": "field_2_3",
+   "uuid": "e976a977-e288-49db-823d-633e7d741512"
+  }
+ ],
+ "rows": [
+  {
+   "field_1_1": "CAD",
+   "field_2_1": "4432-8015-6152-0454",
+   "field_2_2": 672,
+   "field_2_3": 2039
+  }
+ ]
+}

@@ -1,0 +1,292 @@
+syntax = "proto2";
+package hipstershop;
+
+service AdService {
+  rpc GetAds(GetAdsReq) returns (GetAdsResp);
+}
+
+service CartService {
+  rpc AddItem(AddItemReq) returns (AddItemResp);
+  rpc EmptyCart(EmptyCartReq) returns (EmptyCartResp);
+  rpc GetCart(GetCartReq) returns (GetCartResp);
+}
+
+service CheckoutService {
+  rpc PlaceOrder(PlaceOrderReq) returns (PlaceOrderResp);
+}
+
+service CurrencyService {
+  rpc Convert(ConvertReq) returns (ConvertResp);
+  rpc GetSupportedCurrencies(GetSupportedCurrenciesReq) returns (GetSupportedCurrenciesResp);
+}
+
+service EmailService {
+  rpc SendOrderConfirmation(SendOrderConfirmationReq) returns (SendOrderConfirmationResp);
+}
+
+service PaymentService {
+  rpc Charge(ChargeReq) returns (ChargeResp);
+}
+
+service ProductCatalogService {
+  rpc GetProduct(GetProductReq) returns (GetProductResp);
+  rpc ListProducts(ListProductsReq) returns (ListProductsResp);
+}
+
+service RecommendationService {
+  rpc ListRecommendations(ListRecommendationsReq) returns (ListRecommendationsResp);
+}
+
+service ShippingService {
+  rpc GetQuote(GetQuoteReq) returns (GetQuoteResp);
+  rpc ShipOrder(ShipOrderReq) returns (ShipOrderResp);
+}
+
+message GetAdsReq {
+  optional string field_1 = 1;
+}
+message GetAdsResp {
+  message Msg_field_1 {
+    optional string field_1 = 1;
+    optional string field_2 = 2;
+  }
+  optional Msg_field_1 field_1 = 1;
+}
+message AddItemReq {
+  optional string field_1 = 1;
+  message Msg_field_2 {
+    optional string field_1 = 1;
+    optional int32 field_2 = 2;
+  }
+  optional Msg_field_2 field_2 = 2;
+}
+message AddItemResp {
+}
+message EmptyCartReq {
+  optional string field_1 = 1;
+}
+message EmptyCartResp {
+}
+message GetCartReq {
+  optional string field_1 = 1;
+}
+message GetCartResp {
+  optional string field_1 = 1;
+  message Msg_field_2 {
+    optional string field_1 = 1;
+    optional int32 field_2 = 2;
+  }
+  optional Msg_field_2 field_2 = 2;
+}
+message PlaceOrderReq {
+  optional string field_1 = 1;
+  optional string field_2 = 2;
+  message Msg_field_3 {
+    optional string field_1 = 1;
+    optional string field_2 = 2;
+    optional string field_3 = 3 [default = 'CA'];
+    optional string field_4 = 4;
+    optional int32 field_5 = 5;
+  }
+  optional Msg_field_3 field_3 = 3;
+  optional string field_5 = 5;
+  message Msg_field_6 {
+    optional string field_1 = 1;
+    optional int32 field_2 = 2;
+    optional int32 field_3 = 3;
+    optional int32 field_4 = 4 [default = 1];
+  }
+  optional Msg_field_6 field_6 = 6;
+}
+message PlaceOrderResp {
+  message Msg_field_1 {
+    optional string field_1 = 1;
+    optional string field_2 = 2;
+    message Msg_field_3 {
+      optional string field_1 = 1;
+      optional int32 field_2 = 2;
+      optional int32 field_3 = 3;
+    }
+    optional Msg_field_3 field_3 = 3;
+    message Msg_field_4 {
+      optional string field_1 = 1;
+      optional string field_2 = 2;
+      optional string field_3 = 3 [default = 'CA'];
+      optional string field_4 = 4;
+      optional int32 field_5 = 5;
+    }
+    optional Msg_field_4 field_4 = 4;
+    message Msg_field_5 {
+      message Msg_field_1 {
+        optional string field_1 = 1;
+        optional int32 field_2 = 2;
+      }
+      optional Msg_field_1 field_1 = 1;
+      message Msg_field_2 {
+        optional string field_1 = 1;
+        optional int32 field_2 = 2;
+        optional int32 field_3 = 3;
+      }
+      optional Msg_field_2 field_2 = 2;
+    }
+    optional Msg_field_5 field_5 = 5;
+  }
+  optional Msg_field_1 field_1 = 1;
+}
+message ConvertReq {
+  message Msg_field_1 {
+    optional string field_1 = 1 [default = 'USD'];
+    optional int32 field_2 = 2;
+    optional int32 field_3 = 3;
+  }
+  optional Msg_field_1 field_1 = 1;
+  optional string field_2 = 2;
+}
+message ConvertResp {
+  optional string field_1 = 1;
+  optional int32 field_2 = 2;
+  optional int32 field_3 = 3;
+}
+message GetSupportedCurrenciesReq {
+}
+message GetSupportedCurrenciesResp {
+  optional string field_1 = 1;
+}
+message SendOrderConfirmationReq {
+  optional string field_1 = 1;
+  message Msg_field_2 {
+    optional string field_1 = 1;
+    optional string field_2 = 2;
+    message Msg_field_3 {
+      optional string field_1 = 1;
+      optional int32 field_2 = 2;
+      optional int32 field_3 = 3;
+    }
+    optional Msg_field_3 field_3 = 3;
+    message Msg_field_4 {
+      optional string field_1 = 1;
+      optional string field_2 = 2;
+      optional string field_3 = 3 [default = 'CA'];
+      optional string field_4 = 4;
+      optional int32 field_5 = 5;
+    }
+    optional Msg_field_4 field_4 = 4;
+    message Msg_field_5 {
+      message Msg_field_1 {
+        optional string field_1 = 1;
+        optional int32 field_2 = 2;
+      }
+      optional Msg_field_1 field_1 = 1;
+      message Msg_field_2 {
+        optional string field_1 = 1;
+        optional int32 field_2 = 2;
+        optional int32 field_3 = 3;
+      }
+      optional Msg_field_2 field_2 = 2;
+    }
+    optional Msg_field_5 field_5 = 5;
+  }
+  optional Msg_field_2 field_2 = 2;
+}
+message SendOrderConfirmationResp {
+}
+message ChargeReq {
+  message Msg_field_1 {
+    optional string field_1 = 1;
+    optional int32 field_2 = 2;
+    optional int32 field_3 = 3;
+  }
+  optional Msg_field_1 field_1 = 1;
+  message Msg_field_2 {
+    optional string field_1 = 1;
+    optional int32 field_2 = 2;
+    optional int32 field_3 = 3;
+    optional int32 field_4 = 4 [default = 1];
+  }
+  optional Msg_field_2 field_2 = 2;
+}
+message ChargeResp {
+  optional string field_1 = 1;
+}
+message GetProductReq {
+  optional string field_1 = 1;
+}
+message GetProductResp {
+  optional string field_1 = 1;
+  optional string field_2 = 2;
+  optional string field_3 = 3;
+  optional string field_4 = 4;
+  message Msg_field_5 {
+    optional string field_1 = 1 [default = 'USD'];
+    optional int32 field_2 = 2;
+    optional int32 field_3 = 3;
+  }
+  optional Msg_field_5 field_5 = 5;
+  optional string field_6 = 6;
+}
+message ListProductsReq {
+}
+message ListProductsResp {
+  message Msg_field_1 {
+    optional string field_1 = 1;
+    optional string field_2 = 2;
+    optional string field_3 = 3;
+    optional string field_4 = 4;
+    message Msg_field_5 {
+      optional string field_1 = 1 [default = 'USD'];
+      optional int32 field_2 = 2;
+      optional int32 field_3 = 3;
+    }
+    optional Msg_field_5 field_5 = 5;
+    optional string field_6 = 6;
+  }
+  repeated Msg_field_1 field_1 = 1;
+}
+message ListRecommendationsReq {
+  optional string field_1 = 1;
+  optional string field_2 = 2;
+}
+message ListRecommendationsResp {
+  optional string field_1 = 1;
+}
+message GetQuoteReq {
+  message Msg_field_1 {
+    optional string field_1 = 1;
+    optional string field_2 = 2;
+    optional string field_3 = 3 [default = 'CA'];
+    optional string field_4 = 4;
+    optional int32 field_5 = 5;
+  }
+  optional Msg_field_1 field_1 = 1;
+  message Msg_field_2 {
+    optional string field_1 = 1;
+    optional int32 field_2 = 2;
+  }
+  optional Msg_field_2 field_2 = 2;
+}
+message GetQuoteResp {
+  message Msg_field_1 {
+    optional string field_1 = 1 [default = 'USD'];
+    optional int32 field_2 = 2;
+    optional int32 field_3 = 3;
+  }
+  optional Msg_field_1 field_1 = 1;
+}
+message ShipOrderReq {
+  message Msg_field_1 {
+    optional string field_1 = 1;
+    optional string field_2 = 2;
+    optional string field_3 = 3 [default = 'CA'];
+    optional string field_4 = 4;
+    optional int32 field_5 = 5;
+  }
+  optional Msg_field_1 field_1 = 1;
+  message Msg_field_2 {
+    optional string field_1 = 1;
+    optional int32 field_2 = 2;
+  }
+  optional Msg_field_2 field_2 = 2;
+}
+message ShipOrderResp {
+  optional string field_1 = 1;
+}

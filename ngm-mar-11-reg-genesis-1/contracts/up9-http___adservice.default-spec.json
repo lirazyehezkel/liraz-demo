@@ -1,0 +1,47 @@
+{
+ "info": {
+  "title": "http://adservice.default",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/hipstershop.AdService/GetAds": {
+   "parameters": [],
+   "post": {
+    "operationId": "6914feea-6514-478b-a0e1-16598a5f3c8a",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/grpc": {
+       "schema": {
+        "pb_field": 0,
+        "pb_repeated": false,
+        "pb_type": 11,
+        "properties": {
+         "1": {
+          "pb_field": 1,
+          "pb_repeated": false,
+          "pb_type": 9,
+          "type": "string"
+         }
+        },
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/grpc": {}
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 751064 requests"
+   }
+  }
+ },
+ "tags": []
+}

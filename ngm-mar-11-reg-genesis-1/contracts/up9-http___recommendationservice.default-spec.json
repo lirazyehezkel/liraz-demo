@@ -1,0 +1,55 @@
+{
+ "info": {
+  "title": "http://recommendationservice.default",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/hipstershop.RecommendationService/ListRecommendations": {
+   "parameters": [],
+   "post": {
+    "operationId": "8c38b1b4-3f4f-402f-8167-324beeac73d2",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/grpc": {
+       "schema": {
+        "pb_field": 0,
+        "pb_repeated": false,
+        "pb_type": 11,
+        "properties": {
+         "1": {
+          "pb_field": 1,
+          "pb_repeated": false,
+          "pb_type": 9,
+          "type": "string"
+         },
+         "2": {
+          "pb_field": 2,
+          "pb_repeated": false,
+          "pb_type": 9,
+          "type": "string"
+         }
+        },
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/grpc": {
+        "example": "\u0000\u0000\u0000\u0000\u0000"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 942928 requests"
+   }
+  }
+ },
+ "tags": []
+}

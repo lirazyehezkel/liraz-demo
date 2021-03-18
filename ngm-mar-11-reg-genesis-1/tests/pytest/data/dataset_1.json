@@ -1,0 +1,13 @@
+{
+ "parameters": [
+  {
+   "name": "field_2",
+   "uuid": "c44e20af-e814-4680-95f8-d0f163c26bcc"
+  }
+ ],
+ "rows": [
+  {
+   "field_2": "JPY"
+  }
+ ]
+}

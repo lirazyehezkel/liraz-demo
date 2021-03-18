@@ -1,0 +1,160 @@
+{
+ "info": {
+  "title": "http://cartservice.default",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/hipstershop.CartService/AddItem": {
+   "parameters": [],
+   "post": {
+    "operationId": "29c4ca1a-e2d4-4dbf-a3b0-3c7abf5c0092",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/grpc": {
+       "schema": {
+        "pb_field": 0,
+        "pb_repeated": false,
+        "pb_type": 11,
+        "properties": {
+         "1": {
+          "pb_field": 1,
+          "pb_repeated": false,
+          "pb_type": 9,
+          "type": "string"
+         },
+         "2": {
+          "pb_field": 2,
+          "pb_repeated": false,
+          "pb_type": 11,
+          "properties": {
+           "1": {
+            "pb_field": 1,
+            "pb_repeated": false,
+            "pb_type": 9,
+            "type": "string"
+           },
+           "2": {
+            "pb_field": 2,
+            "pb_repeated": false,
+            "pb_type": 5,
+            "type": "integer"
+           }
+          },
+          "type": "object"
+         }
+        },
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/grpc": {
+        "example": "\u0000\u0000\u0000\u0000\u0000"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 137106 requests",
+    "tags": [
+     "hipstershop.CartService"
+    ]
+   }
+  },
+  "/hipstershop.CartService/EmptyCart": {
+   "parameters": [],
+   "post": {
+    "operationId": "52d47693-ba39-4245-9edd-980ef988f005",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/grpc": {
+       "schema": {
+        "pb_field": 0,
+        "pb_repeated": false,
+        "pb_type": 11,
+        "properties": {
+         "1": {
+          "pb_field": 1,
+          "pb_repeated": false,
+          "pb_type": 9,
+          "type": "string"
+         }
+        },
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/grpc": {
+        "example": "\u0000\u0000\u0000\u0000\u0000"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 34612 requests",
+    "tags": [
+     "hipstershop.CartService"
+    ]
+   }
+  },
+  "/hipstershop.CartService/GetCart": {
+   "parameters": [],
+   "post": {
+    "operationId": "02d02235-7511-4e32-b107-fefb0570aea3",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/grpc": {
+       "schema": {
+        "pb_field": 0,
+        "pb_repeated": false,
+        "pb_type": 11,
+        "properties": {
+         "1": {
+          "pb_field": 1,
+          "pb_repeated": false,
+          "pb_type": 9,
+          "type": "string"
+         }
+        },
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/grpc": {
+        "example": "\u0000\u0000\u0000\u0000\u0000"
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1040383 requests",
+    "tags": [
+     "hipstershop.CartService"
+    ]
+   }
+  }
+ },
+ "tags": [
+  {
+   "name": "hipstershop.CartService"
+  }
+ ]
+}

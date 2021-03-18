@@ -1,0 +1,197 @@
+services:
+  adservice.default:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://adservice.default'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: adservice
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  cartservice.default:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://cartservice.default'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: cartservice
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  checkoutservice.default:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://checkoutservice.default'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: checkoutservice
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  currencyservice.default:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://currencyservice.default'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: currencyservice
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  emailservice.default:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://emailservice.default'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: emailservice
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  frontend-external.default:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://frontend-external.default'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: frontend-external
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  frontend-external.defaulthttp:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://frontend-external.defaulthttp:'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: frontend-external
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  frontend.default:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://frontend.default'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: frontend
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  frontend.defaulthttp:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://frontend.defaulthttp:'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: frontend
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  paymentservice.default:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://paymentservice.default'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: paymentservice
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  productcatalogservice.default:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://productcatalogservice.default'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: productcatalogservice
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  recommendationservice.default:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://recommendationservice.default'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: recommendationservice
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  shippingservice.default:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://shippingservice.default'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: shippingservice
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+version: '3.3'
