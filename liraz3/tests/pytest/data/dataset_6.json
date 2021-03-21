@@ -1,0 +1,13 @@
+{
+ "parameters": [
+  {
+   "name": "origin",
+   "uuid": "3b454fa3-7095-4c57-8d95-a62405b3e30f"
+  }
+ ],
+ "rows": [
+  {
+   "origin": "https://www.google.com"
+  }
+ ]
+}

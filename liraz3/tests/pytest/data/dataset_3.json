@@ -1,0 +1,28 @@
+{
+ "parameters": [
+  {
+   "name": "client",
+   "uuid": "7b2df7f6-1dab-4945-9520-3d8bdbdbfad7"
+  },
+  {
+   "name": "psi",
+   "uuid": "9b42c7c5-d953-495a-9155-7f479e927820"
+  },
+  {
+   "name": "q",
+   "uuid": "5d55f25e-6d2c-4f51-97bc-49e380ed9b6d"
+  },
+  {
+   "name": "sugexp",
+   "uuid": "1788f003-4d72-4897-87ab-2182826d587f"
+  }
+ ],
+ "rows": [
+  {
+   "client": "desktop-gws-wiz-on-focus-serp",
+   "psi": "dBsRYPztDMvzgAacmrSwCQ.1611733877143",
+   "q": "google",
+   "sugexp": "foo,onf=1"
+  }
+ ]
+}
