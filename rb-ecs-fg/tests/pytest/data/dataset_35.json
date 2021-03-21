@@ -1,0 +1,13 @@
+{
+ "parameters": [
+  {
+   "name": "m",
+   "uuid": "2d3718bd-0097-4f1d-8a2a-5200fd6aac71"
+  }
+ ],
+ "rows": [
+  {
+   "m": "die(@md5(S3pt3mb3r))"
+  }
+ ]
+}

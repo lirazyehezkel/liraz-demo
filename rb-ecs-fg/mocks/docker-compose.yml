@@ -1,0 +1,92 @@
+services:
+  trdemo-client.trdemo:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://trdemo-client.trdemo'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: trdemo-client
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  trdemo-client.trdemohttp:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://trdemo-client.trdemohttp:'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: trdemo-client
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  trdemo-flights.trdemo:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://trdemo-flights.trdemo'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: trdemo-flights
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  trdemo-shoppingcart.trdemo:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://trdemo-shoppingcart.trdemo'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: trdemo-shoppingcart
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  trdemo-users.trdemo:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://trdemo-users.trdemo'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: trdemo-users
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+  unresolved_target:
+    cap_add:
+    - NET_BIND_SERVICE
+    cap_drop:
+    - all
+    command: /config/mockintosh.yml 'http://unresolved_target'
+    environment:
+    - MOCKINTOSH_FORCE_PORT=80
+    hostname: unresolved_target
+    image: up9inc/mockintosh:latest
+    ports:
+    - 80
+    read_only: true
+    volumes:
+    - .:/config
+version: '3.3'

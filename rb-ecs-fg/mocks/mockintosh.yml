@@ -1,0 +1,336 @@
+# This is a Mockintosh configuration file.
+# Mockintosh provides a microservices friendly, small footprint HTTP mock service.
+# A standard laptop can run dozens of Mockintosh instances, or you can run all instances in a single Docker container.
+#
+# Install Mockintosh:                 pip3 install mockintosh
+# Run locally:                        mockintosh <this-file>
+# Run with Docker:                    docker run -it -p 8000-8005:8000-8005 -v `pwd`:/tmp testrio/mockintosh /tmp/<this-file>
+# More information can be found here: https://github.com/up9inc/mockintosh
+
+---
+management:
+  port: 8000
+services:
+- name: http://trdemo-client.trdemo
+  port: 8001
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-http___trdemo-client.trdemo-spec.json'
+  endpoints:
+  - path: /
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_7.html'
+      useTemplating: false
+  - path: /cart
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_8.html'
+      useTemplating: false
+  - path: /cart/add
+    response:
+      status: 302
+      headers:
+        Content-Type: text/html
+      body: |-
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+        <title>Redirecting...</title>
+        <h1>Redirecting...</h1>
+        <p>You should be redirected automatically to target URL: <a href="/cart">/cart</a>.  If not click the link.
+      useTemplating: false
+  - path: /cart/remove/{{flight_id}}
+    response:
+      status: 302
+      headers:
+        Content-Type: text/html
+      body: |-
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+        <title>Redirecting...</title>
+        <h1>Redirecting...</h1>
+        <p>You should be redirected automatically to target URL: <a href="/cart">/cart</a>.  If not click the link.
+      useTemplating: false
+  - path: /login
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_11.html'
+      useTemplating: false
+  - path: /login
+    response:
+      status: 302
+      headers:
+        Content-Type: text/html
+      body: |-
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+        <title>Redirecting...</title>
+        <h1>Redirecting...</h1>
+        <p>You should be redirected automatically to target URL: <a href="/">/</a>.  If not click the link.
+      useTemplating: false
+    method: post
+  - path: /search
+    response:
+      headers:
+        Content-Type: text/html
+  - path: /
+    response:
+      headers:
+        Content-Type: text/html
+    method: head
+  - path: /
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_18.html'
+      useTemplating: false
+  - path: /
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_21.html'
+      useTemplating: false
+  - path: /
+    response:
+      headers:
+        Content-Type: text/html
+    method: head
+  - path: /
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_23.html'
+      useTemplating: false
+  - path: /login
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_24.html'
+      useTemplating: false
+  - path: /login
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_26.html'
+      useTemplating: false
+    method: post
+  - path: /version
+    response:
+      headers:
+        Content-Type: application/json
+      body: |-
+        {
+         "service": "client",
+         "version": "branch=develop  revision=08b76fb85b51894bc13d80bfb634e684144a51eb  build=94"
+        }
+      useTemplating: false
+  - path: /
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_29.html'
+      useTemplating: false
+  - path: /ooi.php
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_35.html'
+      useTemplating: false
+    method: post
+  - path: /index.php
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_37.html'
+      useTemplating: false
+  - path: /
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_39.html'
+      useTemplating: false
+- name: 'http://trdemo-client.trdemohttp:'
+  port: 8002
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-http___trdemo-client.trdemohttp_-spec.json'
+  endpoints:
+  - path: /{{param}}/
+    response:
+      headers:
+        Content-Type: text/html
+    method: head
+  - path: /{{param}}/
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_17.html'
+      useTemplating: false
+  - path: /{{param}}/
+    response:
+      headers:
+        Content-Type: text/html
+    method: head
+  - path: /{{param}}/
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_32.html'
+      useTemplating: false
+- name: http://trdemo-flights.trdemo
+  port: 8003
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-http___trdemo-flights.trdemo-spec.json'
+  endpoints:
+  - path: /flight/{{param1}}/{{param2}}
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_3.json'
+- name: http://trdemo-shoppingcart.trdemo
+  port: 8004
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-http___trdemo-shoppingcart.trdemo-spec.json'
+  endpoints:
+  - path: /cart/{{email}}
+    response:
+      status: 201
+      headers:
+        Content-Type: application/json
+      body: |-
+        {
+         "products": [
+          {
+           "count": 1,
+           "product_id": "LH-213"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-007"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-011"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-001"
+          }
+         ],
+         "user_id": "alex.haiut@testr.io"
+        }
+      useTemplating: false
+    method: put
+  - path: /cart/{{email}}
+    response:
+      headers:
+        Content-Type: application/json
+      body: |-
+        {
+         "products": [
+          {
+           "count": 1,
+           "product_id": "LH-213"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-007"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-011"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-001"
+          }
+         ],
+         "user_id": "alex.haiut@testr.io"
+        }
+      useTemplating: false
+  - path: /cart/{{email}}/{{product_id}}
+    response:
+      headers:
+        Content-Type: application/json
+      body: |-
+        {
+         "products": [
+          {
+           "count": 1,
+           "product_id": "LH-213"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-007"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-011"
+          }
+         ],
+         "user_id": "alex.haiut@testr.io"
+        }
+      useTemplating: false
+    method: delete
+- name: http://trdemo-users.trdemo
+  port: 8005
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-http___trdemo-users.trdemo-spec.json'
+  endpoints:
+  - path: /user/{{email}}
+    response:
+      headers:
+        Content-Type: application/json
+      body: |-
+        {
+         "airport": "TLV",
+         "currency": "ILS",
+         "email": "alex.haiut@testr.io",
+         "firstname": "Alex",
+         "lastname": "Haiut"
+        }
+      useTemplating: false
+  - path: /user/all
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_2.json'
+      useTemplating: false
+  - path: /user/all
+    response:
+      headers:
+        Content-Type: application/json
+      body: '@mock-data/resp_25.json'
+      useTemplating: false
+  - path: /
+    response:
+      headers:
+        Content-Type: application/json
+      body: |-
+        {
+         "/reset/database": "DELETE",
+         "/user": "POST, GET, PATCH, PUT, DELETE",
+         "/user/all": "GET"
+        }
+      useTemplating: false
+- name: http://unresolved_target
+  port: 8006
+  ssl: false
+  managementRoot: __admin
+  oas: '@mock-data/up9-http___unresolved_target-spec.json'
+  endpoints:
+  - path: /
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_15.html'
+      useTemplating: false
+  - path: /
+    response:
+      headers:
+        Content-Type: text/html
+      body: '@mock-data/resp_19.html'
+      useTemplating: false

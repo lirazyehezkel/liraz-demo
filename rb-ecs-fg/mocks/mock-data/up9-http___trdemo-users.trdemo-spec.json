@@ -1,0 +1,202 @@
+{
+ "info": {
+  "title": "http://trdemo-users.trdemo",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/": {
+   "get": {
+    "operationId": "4d96fd92-bac2-4832-9fae-c064f86dc6cb",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "example": {
+         "/reset/database": "DELETE",
+         "/user": "POST, GET, PATCH, PUT, DELETE",
+         "/user/all": "GET"
+        },
+        "schema": {
+         "properties": {
+          "/reset/database": {
+           "type": "string"
+          },
+          "/user": {
+           "type": "string"
+          },
+          "/user/all": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "/reset/database",
+          "/user",
+          "/user/all"
+         ],
+         "type": "object"
+        }
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 3 requests"
+   },
+   "parameters": []
+  },
+  "/user/all": {
+   "get": {
+    "operationId": "828afd38-c496-4824-8722-baa94d81926a",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "example": [
+         {
+          "airport": "TLV",
+          "currency": "ILS",
+          "email": "alex.haiut@testr.io",
+          "firstname": "Alex",
+          "lastname": "Haiut"
+         },
+         {
+          "airport": "SFO",
+          "currency": "USD",
+          "email": "alon.girmonsky@testr.io",
+          "firstname": "Alon",
+          "lastname": "Girmonsky"
+         },
+         {
+          "airport": "TLV",
+          "currency": "ILS",
+          "email": "moishe.zinger@testr.io",
+          "firstname": "Moishe",
+          "lastname": "Zinger"
+         },
+         {
+          "airport": "GLA",
+          "currency": "GBP",
+          "email": "shahar.yakir@testr.io",
+          "firstname": "Shahar",
+          "lastname": "Yakir"
+         }
+        ],
+        "schema": {
+         "items": {
+          "properties": {
+           "airport": {
+            "type": "string"
+           },
+           "currency": {
+            "type": "string"
+           },
+           "email": {
+            "type": "string"
+           },
+           "firstname": {
+            "type": "string"
+           },
+           "lastname": {
+            "type": "string"
+           }
+          },
+          "required": [
+           "airport",
+           "currency",
+           "email",
+           "firstname",
+           "lastname"
+          ],
+          "type": "object"
+         },
+         "type": "array"
+        }
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 331 requests",
+    "tags": [
+     "user"
+    ]
+   },
+   "parameters": []
+  },
+  "/user/{email}": {
+   "get": {
+    "operationId": "2def8a00-b3d8-4c12-84c6-a43acaa19bb0",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "example": {
+         "airport": "TLV",
+         "currency": "ILS",
+         "email": "alex.haiut@testr.io",
+         "firstname": "Alex",
+         "lastname": "Haiut"
+        },
+        "schema": {
+         "additionalProperties": {
+          "type": "string"
+         },
+         "properties": {
+          "airport": {
+           "type": "string"
+          },
+          "currency": {
+           "type": "string"
+          },
+          "email": {
+           "type": "string"
+          },
+          "lastname": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "airport",
+          "currency",
+          "email",
+          "lastname"
+         ],
+         "type": "object"
+        }
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 6 requests",
+    "tags": [
+     "user"
+    ]
+   },
+   "parameters": [
+    {
+     "description": "Origin: GET http://trdemo-users.trdemo/user/all &rarr; json: $[*].email",
+     "in": "path",
+     "name": "email",
+     "required": true,
+     "schema": {
+      "enum": [
+       "alex.haiut@testr.io"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ]
+  }
+ },
+ "tags": [
+  {
+   "name": "user"
+  }
+ ]
+}

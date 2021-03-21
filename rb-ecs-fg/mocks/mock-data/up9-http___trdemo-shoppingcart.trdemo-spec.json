@@ -1,0 +1,283 @@
+{
+ "info": {
+  "title": "http://trdemo-shoppingcart.trdemo",
+  "version": "0.0"
+ },
+ "openapi": "3.0.2",
+ "paths": {
+  "/cart/{email}": {
+   "get": {
+    "operationId": "780152d8-1676-4a44-be6a-7c1af6e6e961",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "example": {
+         "products": [
+          {
+           "count": 1,
+           "product_id": "LH-213"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-007"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-011"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-001"
+          }
+         ],
+         "user_id": "alex.haiut@testr.io"
+        },
+        "schema": {
+         "properties": {
+          "products": {
+           "items": {
+            "properties": {
+             "count": {
+              "type": "integer"
+             },
+             "product_id": {
+              "type": "string"
+             }
+            },
+            "required": [
+             "count",
+             "product_id"
+            ],
+            "type": "object"
+           },
+           "type": "array"
+          },
+          "user_id": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "products",
+          "user_id"
+         ],
+         "type": "object"
+        }
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 3 requests",
+    "tags": [
+     "cart"
+    ]
+   },
+   "parameters": [
+    {
+     "description": "Origin: GET http://trdemo-client.trdemo/version &rarr; json: $.[*].email",
+     "in": "path",
+     "name": "email",
+     "required": true,
+     "schema": {
+      "enum": [
+       "alex.haiut@testr.io"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ],
+   "put": {
+    "operationId": "20b8b302-3651-41f0-9dc5-72de929c0d0b",
+    "parameters": [],
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "properties": {
+         "count": {
+          "type": "integer"
+         },
+         "product_id": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "count",
+         "product_id"
+        ],
+        "type": "object"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "201": {
+      "content": {
+       "application/json": {
+        "example": {
+         "products": [
+          {
+           "count": 1,
+           "product_id": "LH-213"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-007"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-011"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-001"
+          }
+         ],
+         "user_id": "alex.haiut@testr.io"
+        },
+        "schema": {
+         "properties": {
+          "products": {
+           "items": {
+            "properties": {
+             "count": {
+              "type": "integer"
+             },
+             "product_id": {
+              "type": "string"
+             }
+            },
+            "required": [
+             "count",
+             "product_id"
+            ],
+            "type": "object"
+           },
+           "type": "array"
+          },
+          "user_id": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "products",
+          "user_id"
+         ],
+         "type": "object"
+        }
+       }
+      },
+      "description": "Created"
+     }
+    },
+    "summary": "Seen 1 requests",
+    "tags": [
+     "cart"
+    ]
+   }
+  },
+  "/cart/{email}/{product_id}": {
+   "delete": {
+    "operationId": "1fbec882-9275-4286-a184-5f958fb06675",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "example": {
+         "products": [
+          {
+           "count": 1,
+           "product_id": "LH-213"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-007"
+          },
+          {
+           "count": 1,
+           "product_id": "LY-011"
+          }
+         ],
+         "user_id": "alex.haiut@testr.io"
+        },
+        "schema": {
+         "properties": {
+          "products": {
+           "items": {
+            "properties": {
+             "count": {
+              "type": "integer"
+             },
+             "product_id": {
+              "type": "string"
+             }
+            },
+            "required": [
+             "count",
+             "product_id"
+            ],
+            "type": "object"
+           },
+           "type": "array"
+          },
+          "user_id": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "products",
+          "user_id"
+         ],
+         "type": "object"
+        }
+       }
+      },
+      "description": "OK"
+     }
+    },
+    "summary": "Seen 1 requests",
+    "tags": [
+     "cart"
+    ]
+   },
+   "parameters": [
+    {
+     "description": "Origin: GET http://trdemo-client.trdemo/version &rarr; json: $.[*].email",
+     "in": "path",
+     "name": "email",
+     "required": true,
+     "schema": {
+      "enum": [
+       "alex.haiut@testr.io"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    },
+    {
+     "description": "Origin: GET http://trdemo-shoppingcart.trdemo/cart/{email} &rarr; json: $.products[*].product_id",
+     "in": "path",
+     "name": "product_id",
+     "required": true,
+     "schema": {
+      "enum": [
+       "LY-001"
+      ],
+      "type": "string"
+     },
+     "style": "simple"
+    }
+   ]
+  }
+ },
+ "tags": [
+  {
+   "name": "cart"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "parameters": [
+  {
+   "name": "param",
+   "uuid": "640f8e83-6803-4b10-9e9d-75b31d548bc1"
+  },
+  {
+   "name": "param1",
+   "uuid": "c995b57e-bfdf-4642-881b-5e7af2f9020a"
+  }
+ ],
+ "rows": [
+  {
+   "param": "*-*",
+   "param1": "2019-12-01"
+  }
+ ]
+}
